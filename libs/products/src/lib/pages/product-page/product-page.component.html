@@ -1,7 +1,8 @@
 <div class="product-page" *ngIf="product">
     <div class="grid">
         <div class="col-6">
-            <ui-gallery [images]="product.images"></ui-gallery>
+            <img [src]="product.image" class="image" style="width: 100%; height: 50vh;" alt="">
+            <!-- <ui-gallery [images]="product.images"></ui-gallery> -->
         </div>
         <div class="col-6 product">
             <h2 class="product-name">{{ product?.name }}</h2>

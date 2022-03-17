@@ -16,7 +16,8 @@
                             </div>
                             <small *ngIf="loginForm.email.invalid && isSubmitted" class="p-error"><span
                                     *ngIf="loginForm.email.errors?.required">Email is required</span>
-                                <span *ngIf="loginForm.email.errors?.email">Email is invalid</span></small>
+                                <span *ngIf="loginForm.email.errors?.email">Email is invalid</span>
+                            </small>
                         </div>
                         <div class="col-12">
                             <div class="p-inputgroup">

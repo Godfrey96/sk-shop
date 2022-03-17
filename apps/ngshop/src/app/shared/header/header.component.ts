@@ -27,15 +27,6 @@ export class HeaderComponent implements OnInit {
     this.authService.logout();
   }
 
-  // observeCurrentUser() {
-  //   this.user = this.usersFacade.currentUser$;
-  //   console.log('usersss: ', this.user)
-
-  //   return this.user;
-
-  //   // return this.usersFacade.currentUser$;
-  // }
-
   observeCurrentUser() {
     // this.user = true;
     this.user$ = this.localStorageService.getToken();
